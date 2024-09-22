@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mindful Breaks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- User Login Section -->
+    <section class="login-section">
+        <h2>Login to Track Your Progress</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p id="welcomeMessage"></p>
+    </section>
+
+    <!-- Break Suggestions Section -->
+    <section class="mood-section">
+        <h2>Customize Your Break</h2>
+        <label for="mood">How are you feeling?</label>
+        <select id="mood">
+            <option value="stressed">Stressed</option>
+            <option value="tired">Tired</option>
+            <option value="calm">Calm</option>
+            <option value="focused">Focused</option>
+        </select>
+        <button onclick="suggestBreak()">Get Break Suggestion</button>
+        <p id="suggestion"></p>
+    </section>
+
+    <header>
+        <h1>Mindful Breaks</h1>
+        <p>Take a quick 2-5 minute break to refresh your mind!</p>
+    </header>
+
+    <main>
+        <section class="break-selection">
+            <h2>Select Your Break</h2>
+            <button onclick="playMeditation('meditation1')">2-Minute Break</button>
+            <button onclick="playMeditation('meditation2')">5-Minute Break</button>
+        </section>
+
+        <section class="player">
+            <audio id="meditation1" src="2min-meditation.mp3"></audio>
+            <audio id="meditation2" src="5min-meditation.mp3"></audio>
+            
+            <div id="player-controls">
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="stopBtn">Stop</button>
+            </div>
+
+            <div class="message" id="message"></div>
+        </section>
+
+        <section class="progress">
+            <h2>Your Mindfulness Progress</h2>
+            <p>Breaks Taken Today: <span id="breakCount">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Remember, even short mindful breaks can make a big difference!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

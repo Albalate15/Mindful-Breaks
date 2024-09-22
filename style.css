@@ -1,0 +1,145 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #ffde59;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.break-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.break-selection button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.break-selection button:hover {
+    background-color: #45a049;
+}
+
+/* Player controls */
+.player {
+    text-align: center;
+}
+
+#player-controls {
+    margin-top: 20px;
+}
+
+#player-controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#player-controls button:hover {
+    background-color: #0b7dda;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffde59;
+    margin-top: auto;
+}
+
+/* Login Section */
+.login-section {
+    text-align: center;
+    margin: 20px;
+}
+
+#loginForm {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#loginForm input {
+    margin: 5px;
+    padding: 8px;
+}
+
+#loginForm button {
+    padding: 8px 15px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mood Selector */
+.mood-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.mood-section button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.mood-section button:hover {
+    background-color: #e64a19;
+}
+
+/* Progress Section */
+.progress {
+    text-align: center;
+    margin-top: 20px;
+}
